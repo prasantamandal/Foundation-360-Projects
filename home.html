@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Owner Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="firebase-config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Home Owner Dashboard</h1>
+
+  <section>
+    <h2>Create New Project</h2>
+    <input type="text" id="projectName" placeholder="Project Name">
+    <input type="text" id="location" placeholder="Location">
+    <input type="number" id="budget" placeholder="Budget">
+    <button onclick="createProject()">Create Project</button>
+  </section>
+
+  <section>
+    <h2>Browse Contractors</h2>
+    <div id="contractorList"></div>
+  </section>
+
+  <button onclick="logout()">Logout</button>
+</body>
+</html>
